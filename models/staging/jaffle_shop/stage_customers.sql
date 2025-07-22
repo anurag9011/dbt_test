@@ -1,0 +1,10 @@
+WITH CUSTOMERS AS (
+
+    SELECT ID AS CUSTOMER_ID ,
+           FIRST_NAME AS FIRST_NAME ,
+           LAST_NAME  AS LAST_NAME 
+    FROM {{source('jaffle_shop','customers')}}
+
+)
+
+SELECT * FROM CUSTOMERS
