@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: mock_orders_source
+    description: 'this source is to get data from mock_order data from snowflake '
+    database: pc_dbt_db
+    schema: db_amorton
+    tables:
+      - name: mock_orders
